@@ -35,17 +35,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Zufällige Weiterleitung -->
+
   <script>
     (function rotateLinks() {
       const r = Math.random() * 100;
 
-      if (r < 50) {
-        window.location.replace("https://tally.so/r/0Q4NDZ");
-      } else {
-        window.location.replace("https://tally.so/r/0Q4NDZ?=view");
-      }
+      setTimeout(function () {
+        if (r < 50) {
+          window.location.replace("https://tally.so/r/0Q4NDZ");
+        } else {
+          window.location.replace("https://tally.so/r/0Q4NDZ?=view");
+        }
+      }, 3000); // 1000 ms = 1 Sekunde
     })();
   </script>
+
 
 </body>
 </html>
