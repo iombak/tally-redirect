@@ -39,12 +39,13 @@
 
   <script>
     (function rotateLinks() {
-      const links = [
-        "https://tally.so/r/0Q4NDZ?opt=1",
-        "https://tally.so/r/0Q4NDZ?opt=2",
-        "https://tally.so/r/0Q4NDZ?opt=3",
-        "https://tally.so/r/0Q4NDZ?opt=4",
-      ];
+
+    const limit = 5;
+    let links = [];
+
+        for (let i = 1; i < limit; i++) {
+        links.push("https://tally.so/r/0Q4NDZ?opt="+ i);
+    }
 
       // Zufälligen Link auswählen (je 25 %)
       const index = Math.floor(Math.random() * links.length);
@@ -60,7 +61,7 @@
       // Nach 3 Sekunden weiterleiten
       setTimeout(function () {
         window.location.replace(url.toString());
-      }, 3000);
+      }, 2000);
     })();
   </script>
 
