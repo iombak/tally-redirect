@@ -36,19 +36,34 @@
 
   <!-- Zufällige Weiterleitung -->
 
+
   <script>
     (function rotateLinks() {
-      const r = Math.random() * 100;
+      const links = [
+        "https://tally.so/r/0Q4NDZ?opt=1",
+        "https://tally.so/r/0Q4NDZ?opt=2",
+        "https://tally.so/r/0Q4NDZ?opt=3",
+        "https://tally.so/r/0Q4NDZ?opt=4",
+      ];
 
+      // Zufälligen Link auswählen (je 25 %)
+      const index = Math.floor(Math.random() * links.length);
+      const url = new URL(links[index]);
+
+      // Aktuelle URL-Parameter übernehmen
+      const params = new URLSearchParams(window.location.search);
+
+      params.forEach((value, key) => {
+        url.searchParams.append(key, value);
+      });
+
+      // Nach 3 Sekunden weiterleiten
       setTimeout(function () {
-        if (r < 50) {
-          window.location.replace("https://tally.so/r/0Q4NDZ");
-        } else {
-          window.location.replace("https://tally.so/r/0Q4NDZ?=view");
-        }
-      }, 3000); // 1000 ms = 1 Sekunde
+        window.location.replace(url.toString());
+      }, 3000);
     })();
   </script>
+
 
 
 </body>
