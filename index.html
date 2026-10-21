@@ -6,14 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Weiterleitung</title>
-  
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
 </head>
-<body style="background-color: white;">
+<body class="bg-light">
 
-  <div>
+  <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="card shadow-sm border-0 text-center p-4" style="max-width: 450px;">
+      <div class="card-body">
+        <h1 class="h4 mb-3">Willkommen!</h1>
 
+        <p class="text-secondary mb-4">
+          Du wirst in Kürze weitergeleitet.
+        </p>
+
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Lädt...</span>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <!-- Bootstrap 5 JavaScript (optional für dieses Beispiel) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Zufällige Weiterleitung -->
 
