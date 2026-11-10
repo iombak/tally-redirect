@@ -33,12 +33,14 @@
   <script>
     (function rotateLinks() {
 
-    const limit = 5;
+    const limit = 2;
     let links = [];
 
-        for (let i = 1; i < limit; i++) {
-        links.push("https://tally.so/r/0Q4NDZ?opt="+ i);
-    }
+    //     for (let i = 1; i < limit; i++) {
+    //     links.push("https://tally.so/r/0Q4NDZ?opt="+ i);
+    // }
+    links.push("https://tally.so/r/0Q4NDZ?btw=progress");
+    links.push("https://tally.so/r/0Q4NDZ?btw=streak");
 
       const index = Math.floor(Math.random() * links.length);
       const url = new URL(links[index]);
