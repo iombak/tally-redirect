@@ -1,7 +1,17 @@
     B  srw sro stw sto
 ls
- 1   1   2   3   4   5
- 2   5   1   2   3   4
- 3   4   5   1   2   3
- 4   3   4   5   1   2
- 5   2   3   4   5   1
+1   1   2   3   4   5
+2   5   1   2   3   4
+3   4   5   1   2   3
+4   3   4   5   1   2
+5   2   3   4   5   1
+
+->
+
+
+ls
+1    B srw sro stw sto
+2   sto  B srw sro stw
+3   stw sto  B srw sro
+4   sro stw sto  B srw
+5   srw sro stw sto B
