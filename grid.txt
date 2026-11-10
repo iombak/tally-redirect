@@ -15,3 +15,27 @@ if ls
   3   stw sto  B srw sro
   4   sro stw sto  B srw
   5   srw sro stw sto B
+
+
+if ls
+  1    B prw pro ptw pto
+  2   pto  B prw pro ptw
+  3   ptw pto  B prw pro
+  4   pro ptw pto  B prw
+  5   prw pro ptw pto B
+
+
+    links.push("https://tally.so/r/0Q4NDZ?btw=streak");
+
+
+https://tally.so/r/0Q4NDZ?btw=streak&ls=1
+https://tally.so/r/0Q4NDZ?btw=streak&ls=2
+https://tally.so/r/0Q4NDZ?btw=streak&ls=3
+https://tally.so/r/0Q4NDZ?btw=streak&ls=4
+https://tally.so/r/0Q4NDZ?btw=streak&ls=5
+
+https://tally.so/r/0Q4NDZ?btw=progress&=1
+https://tally.so/r/0Q4NDZ?btw=progress&=2
+https://tally.so/r/0Q4NDZ?btw=progress&=3
+https://tally.so/r/0Q4NDZ?btw=progress&=4
+https://tally.so/r/0Q4NDZ?btw=progress&=5
