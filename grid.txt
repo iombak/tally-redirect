@@ -9,9 +9,9 @@ ls
 ->
 
 
-ls
-1    B srw sro stw sto
-2   sto  B srw sro stw
-3   stw sto  B srw sro
-4   sro stw sto  B srw
-5   srw sro stw sto B
+if ls
+  1    B srw sro stw sto
+  2   sto  B srw sro stw
+  3   stw sto  B srw sro
+  4   sro stw sto  B srw
+  5   srw sro stw sto B
